@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt1Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Input 1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edt2Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt1Input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Input 2"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edt3Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt2Input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Input 3"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edt4Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt3Input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Input 4"
+        android:inputType="numberDecimal" />
+
+
+    <Button
+        android:id="@+id/btn_predict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt4Input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Predict!!" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#00C853"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_predict"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Reset"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_result" />
+
+</RelativeLayout>
